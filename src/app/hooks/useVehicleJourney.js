@@ -58,6 +58,7 @@ export const useVehicleJourney = (selectedDate) => {
     clearInterval(intervalRef.current);
     setIsRunning(false);
     setVehicleData((prev) => ({ ...prev, ignition: "OFF", speed: "0 km/h" }));
+    setShowInfo(true)
   };
 
   const resetJourney = () => {
